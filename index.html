@@ -6,8 +6,8 @@
     <title>Vaquinha do Casamento</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6f9;
             color: #333;
             margin: 0;
             padding: 0;
@@ -18,29 +18,34 @@
             object-fit: cover;
         }
         .container {
-            max-width: 600px;
-            margin: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             text-align: center;
         }
         h1 {
             color: #4CAF50;
+            margin-bottom: 10px;
         }
         p {
             font-size: 18px;
             margin-bottom: 20px;
+            line-height: 1.6;
         }
         .btn {
             display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: #4CAF50;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
+            transition: background 0.3s;
         }
         .btn:hover {
             background: #45a049;
@@ -61,11 +66,15 @@
 </head>
 <body>
     <header>
-        <img src="foto.jpg" alt="Fotoiv class="container">
-        <h1>Nosso Grande Dia</h1>
-        <p>Estamos prestes a realizar um sonho: oficializar nossa união! 💍<br>
-        Cada contribuição é um gesto de carinho que nos ajuda a dar este passo tão especial.<br>
-        Escolha um valor e faça parte da nossa história!</p>
+        foto.jpg
+    </header>
+    <div class="container">
+        <h1>Nosso Grande Dia 💍</h1>
+        <p>
+            Estamos prestes a realizar um sonho: oficializar nossa união!<br>
+            Cada contribuição é um gesto de carinho que nos ajuda a dar este passo tão especial.<br>
+            Escolha um valor e faça parte da nossa história. Obrigado por caminhar conosco!
+        </p>
 
         <button class="btn" onclick="gerarQRCode(10)">Contribuir R$10</button>
         <button class="btn" onclick="gerarQRCode(20)">Contribuir R$20</button>
@@ -104,5 +113,4 @@
         }
     </script>
 </body>
-
 </html>
